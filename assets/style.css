@@ -1,0 +1,137 @@
+
+* {
+    font-family:unset;
+    letter-spacing: 2px;
+}
+
+:root{
+    --dark-green: rgb(40, 120, 131);
+    --tan: rgb(209, 180, 147);
+    --border: solid 0.5em var(--tan);
+    --border-rad: 0.5em;
+    --padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+body {
+    justify-content:space-between;
+}
+
+#background{
+}
+header {
+    height: 5rem;
+    color: var(--tan);
+    background-color: var(--dark-green);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border: var(--border);
+    border-radius: 0.5em;
+}
+
+h1{
+    font-size:8ch
+}
+
+.header ul {
+    font-size: 4ch;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 1rem;
+}
+
+h2{
+    font-size: 6ch;
+}
+
+/* Float left of about me*/
+/* object-fit lets me decide how the picture should fit within the element */
+
+.photo-1{
+    display: inline-block;
+    object-fit:contain;
+    background-image: url("./Chewy&I.jpg");
+    height: 500px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border: var(--border);
+    border-radius: 50%;
+}
+/* About me section should be placed in box on the right of picture */
+
+.about-me {
+    height: 35rem;
+    width: 45rem;
+    float: right;
+    border: var(--border);
+    border-radius: var(--border-rad);
+    padding: var(--padding);
+    margin: 1.5em 0em 1.5em 0em;
+    display: inline-block;
+    flex-wrap: wrap;
+    color: var(--tan);
+    background-color: var(--dark-green);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 20em;
+    line-height: 2em;
+}
+/* display below picture */
+.resume {
+    height: 35rem;
+    width:45rem;
+    float: left;
+    border: var(--border);
+    border-radius: var(--border-rad);
+    padding: var(--padding);
+    margin: 1.5em 0em 1.5em 0em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: var(--tan);
+    background-color: var(--dark-green);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 20em;
+    line-height: 2em;
+}
+
+footer{
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width:100.5rem;
+    border: var(--border);
+    border-radius: var(--border-rad);
+    padding: var(--padding);
+    margin: 1.5em 0em 1.5em 0em;
+    display: flex;
+    color: var(--tan);
+    background-color: var(--dark-green);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 20em;
+    line-height: 2em;
+}
+
+footer ul{
+    font-size: 4ch;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
